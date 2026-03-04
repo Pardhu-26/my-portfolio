@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pardha Sai – AI & ML Enthusiast</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket"></span>My Portfolio<span class="logo-bracket"></span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="PardhuResume.docx" download class="nav-cta">
+            <i class="fa-solid fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting reveal">👋 Hello, World! I'm</p>
+      <h1 class="hero-name reveal">
+        Pardha Sai<br />
+        <span class="name-highlight">Muddana</span>
+      </h1>
+      <p class="hero-tagline reveal">
+        <span class="typed-text" id="typed"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-intro reveal">
+        B.Tech CSE student from Andhra Pradesh, India — passionate about building<br class="break-desktop" />
+        intelligent systems and exploring the frontiers of Artificial Intelligence.
+      </p>
+
+      <div class="hero-buttons reveal">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="PardhuResume.docx" download class="btn btn-outline">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number">8.57</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Curiosity</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// get to know me</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="avatar-card">
+            <div class="avatar-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="about-badges">
+            <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="badge"><i class="fa-solid fa-network-wired"></i> Machine Learning</span>
+            <span class="badge"><i class="fa-solid fa-eye"></i> DSA</span>
+            <span class="badge"><i class="fa-solid fa-chart-line"></i> Artificial Intelligence</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <p class="about-para">
+            I'm <strong>Pardha Sai Veera Venkata Prakash Muddana</strong>, a B.Tech Computer Science and Engineering student from Andhra Pradesh, India.
+            My journey in tech is driven by a deep fascination with how machines can be taught to think, learn, and solve real-world problems.
+          </p>
+          <p class="about-para">
+            I specialize in <strong>Artificial Intelligence & Machine Learning</strong>, <strong>DSA</strong>, <strong>Web Framework</strong>, and <strong>Data Science</strong> — constantly experimenting with new models, datasets, and ideas. Whether it's training a classifier or building an AI-powered tool, I love every step of the process.
+          </p>
+          <p class="about-para highlight-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            I am <strong>actively seeking ML/AI internship opportunities</strong> where I can contribute meaningfully, learn from experienced engineers, and turn cutting-edge research into practical impact.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Andhra Pradesh, India</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>B.Tech CSE Student</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>pradhumuddana@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-github"></i>
+              <span>github.com/Pardhu-26</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section id="skills" class="skills section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// what I work with</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-primary"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-tag tier-secondary">C</span>
+            <span class="skill-tag tier-secondary">Java</span>
+            <span class="skill-tag tier-secondary">CSS</span>
+            <span class="skill-tag tier-secondary">HTML</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon ai-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-primary">Machine Learning</span>
+            <span class="skill-tag tier-secondary">AI</span>
+            <span class="skill-tag tier-secondary">DSA</span>
+            <span class="skill-tag tier-tertiary">Web Frameworks</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon tools-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Tools & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-primary"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="skill-tag tier-primary"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="skill-tag tier-secondary">Canva</span>
+            <span class="skill-tag tier-secondary">AI Tools</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-icon soft-icon"><i class="fa-solid fa-people-group"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag tier-primary">Problem Solving</span>
+            <span class="skill-tag tier-primary">Communication</span>
+            <span class="skill-tag tier-secondary">Team Player</span>
+            <span class="skill-tag tier-secondary">Quick Learner</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// things I've built</p>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Voice Assistant</h3>
+          <p class="project-desc">
+            A Python-powered voice assistant capable of understanding natural language commands, answering queries, playing music, and performing web searches — all via voice interaction.
+          </p>
+          <div class="project-stack">
+            <span>Python</span>
+            <span>SpeechRecognition</span>
+            <span>pyttsx3</span>
+            <span>NLP</span>
+          </div>
+          <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" class="project-cta">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <article class="project-card reveal featured-card">
+          <div class="featured-badge">⭐ Featured</div>
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-brands fa-youtube"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">YouTube Automation 🤫</h3>
+          <p class="project-desc">
+            A stealth automation pipeline that generates, edits, and schedules YouTube video content using AI — combining scripting, voice synthesis, and video processing in one seamless workflow.
+          </p>
+          <div class="project-stack">
+            <span>ChatGPT</span>
+            <span>CapCut</span>
+            <span>ClipChamp</span>
+            <span>Canva</span>
+          </div>
+          <a href="https://www.youtube.com/@CuriousEdge_56" target="_blank" rel="noopener" class="project-cta">
+            View on YouTube <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-chart-simple"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">ML Practice Projects</h3>
+          <p class="project-desc">
+            A curated collection of hands-on machine learning projects — from regression and classification to neural network experiments — built while learning core ML concepts and algorithms.
+          </p>
+          <div class="project-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+          </div>
+          <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" class="project-cta">
+            View on GitHub <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="github-cta reveal">
+        <p>See more of my work on GitHub</p>
+        <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> @Pardhu-26
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+  ============================================================ -->
+  <section id="certifications" class="certifications section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// credentials & learning</p>
+        <h2 class="section-title">Certifi<span class="accent">cations</span></h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon ibm-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-issuer">IBM SkillsBuild</span>
+            <h3 class="cert-title">IBM SkillsBuild Certificate</h3>
+            <p class="cert-desc">Completed IBM's professional skills and technology training covering AI fundamentals, data literacy, and digital credentials.</p>
+          </div>
+          <div class="cert-actions">
+            <div class="cert-badge">Verified</div>
+            <a href="IBM Certifications.pdf" class="cert-badge" rel="IBM Certificates"> See <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon hp-icon">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-issuer">HP LIFE</span>
+            <h3 class="cert-title">AI for Beginners</h3>
+            <p class="cert-desc">Foundational course covering core AI concepts, use cases in business, and the ethical implications of AI-driven decision making.</p>
+          </div>
+          <div class="cert-actions">
+            <div class="cert-badge">Completed</div>
+            <a href="AI for Beginners.pdf" class="cert-badge" rel="AI for Beginners Certificate"> See <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon quantum-icon">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <div class="cert-content">
+            <span class="cert-issuer">Quantum Computing</span>
+            <h3 class="cert-title">Quantum Computing Course</h3>
+            <p class="cert-desc">Introduction to quantum computing principles, qubits, quantum gates, and their future intersections with AI and machine learning.</p>
+          </div>
+          <div class="cert-actions">
+            <div class="cert-badge">Completed</div>
+            <a href="Quantum Fundamentals.jpg" class="cert-badge" rel="Quantum Fundamentals Certificate"> See <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESUME SECTION
+  ============================================================ -->
+  <section id="resume" class="resume-section section">
+    <div class="container">
+      <div class="resume-card reveal">
+        <div class="resume-card-content">
+          <div class="resume-icon-wrap">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="resume-text">
+            <h2>Download My Resume</h2>
+            <p>Get a complete overview of my education, skills, projects, and certifications in one clean document.</p>
+          </div>
+          <a href="PardhuResume.docx" download class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="contact section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// let's connect</p>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm actively looking for <strong>ML/AI internship opportunities</strong>. Whether you have a role, a collaboration idea, or just want to talk AI — my inbox is always open!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:pradhumuddana@gmail.com" class="contact-link">
+              <div class="contact-link-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">pradhumuddana@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/Pardhu-26" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon github-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">Pardhu-26</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pardha-sai-veera-venkata-prakash-muddana-761245293/" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Pardha Sai Veera Venkata Prakash Muddana</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Pardha, I'd love to discuss an internship opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Pardha<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Built with <span class="heart">♥</span> and a passion for AI</p>
+        <p class="footer-copy">&copy; 2024 Pardha Sai Muddana &nbsp;&middot;&nbsp; All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
