@@ -90,6 +90,28 @@ ul { list-style: none; }
 .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+/* AVATAR PHOTO */
+.avatar-photo-wrap {
+  width: 220px;
+  height: 220px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid rgba(59,130,246,0.35);
+  box-shadow: 0 0 30px rgba(59,130,246,0.2);
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
 
 /* 9. HERO */
 .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 120px 20px 80px; }
@@ -182,6 +204,7 @@ ul { list-style: none; }
 .ibm-icon     { background: rgba(59,130,246,0.12);  color: var(--clr-primary); }
 .hp-icon      { background: rgba(52,211,153,0.12);  color: var(--clr-green); }
 .quantum-icon { background: rgba(129,140,248,0.12); color: var(--clr-accent-2); }
+.chart-line { background: rgba(129,140,248,0.12); color: var(--clr-accent-2); }
 .cert-issuer { font-size: 0.78rem; font-family: var(--font-mono); color: var(--clr-primary); letter-spacing: 0.05em; text-transform: uppercase; }
 .cert-title { font-size: 1.05rem; font-weight: 700; color: var(--clr-text); margin: 4px 0 8px; }
 .cert-desc { font-size: 0.88rem; color: var(--clr-text-muted); line-height: 1.7; flex: 1; }
@@ -231,6 +254,45 @@ ul { list-style: none; }
 .back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
 .back-to-top:hover { background: #2563eb; }
 
+/* EDUCATION SECTION */
+.edu-timeline { display: flex; flex-direction: column; gap: 20px; }
+
+.edu-card { display: flex; align-items: flex-start; gap: 22px; background: var(--clr-surface); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 28px 30px; position: relative; overflow: hidden; transition: transform var(--dur), border-color var(--dur), box-shadow var(--dur); }
+
+.edu-card::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; border-radius: 0 3px 3px 0; opacity: 0; transition: opacity var(--dur); }
+.edu-card:nth-child(1)::after { background: linear-gradient(180deg, var(--clr-primary), var(--clr-accent-2)); }
+.edu-card:nth-child(2)::after { background: linear-gradient(180deg, var(--clr-accent-2), #a78bfa); }
+.edu-card:nth-child(3)::after { background: linear-gradient(180deg, var(--clr-green), #6ee7b7); }
+
+.edu-card:hover { transform: translateY(-4px); border-color: var(--clr-border-hover); box-shadow: var(--shadow-glow); }
+.edu-card:hover::after { opacity: 1; }
+
+.edu-icon-wrap { width: 54px; height: 54px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; font-size: 1.45rem; flex-shrink: 0; margin-top: 2px; }
+.edu-icon-btech { background: rgba(59,130,246,0.13); color: var(--clr-primary); }
+.edu-icon-inter { background: rgba(129,140,248,0.13); color: var(--clr-accent-2); }
+.edu-icon-tenth { background: rgba(52,211,153,0.13);  color: var(--clr-green); }
+
+.edu-body { flex: 1; min-width: 0; }
+.edu-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.edu-title-block { flex: 1; min-width: 0; }
+
+.edu-level { display: block; font-family: var(--font-mono); font-size: 0.73rem; color: var(--clr-primary); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 5px; }
+.edu-institution { font-size: 1.08rem; font-weight: 700; color: var(--clr-text); line-height: 1.35; }
+
+.edu-status { padding: 4px 14px; border-radius: 50px; font-size: 0.74rem; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+.edu-status.pursuing  { background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3); color: var(--clr-primary); }
+.edu-status.completed { background: rgba(52,211,153,0.12); border: 1px solid rgba(52,211,153,0.3); color: var(--clr-green); }
+
+.edu-course { display: flex; align-items: center; gap: 8px; font-size: 0.91rem; color: var(--clr-text-muted); margin-bottom: 14px; }
+.edu-course i { color: var(--clr-accent-2); font-size: 0.82rem; flex-shrink: 0; }
+
+.edu-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.edu-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 13px; background: rgba(255,255,255,0.04); border: 1px solid var(--clr-border); border-radius: 50px; font-size: 0.82rem; font-weight: 600; color: var(--clr-text-muted); }
+.edu-chip i { color: var(--clr-accent); font-size: 0.76rem; }
+
+/* EMAIL CTA BUTTON */
+.email-cta-btn { margin-top: 22px; width: 100%; justify-content: center; }
+
 /* 18. RESPONSIVE */
 @media (max-width: 900px) {
   .about-grid   { grid-template-columns: 1fr; }
@@ -246,6 +308,9 @@ ul { list-style: none; }
   .about-info-grid { grid-template-columns: 1fr; }
   .resume-card { padding: 36px 24px; }
   .contact-form-wrap { padding: 24px; }
+  .edu-card  { flex-direction: column; gap: 14px; padding: 22px 18px; }
+  .edu-top   { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .edu-chips { gap: 8px; }
 }
 
 @media (max-width: 480px) {
