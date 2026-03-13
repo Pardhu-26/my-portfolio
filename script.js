@@ -130,8 +130,8 @@ if (statsSection) {
   const so = new IntersectionObserver((e) => {
     if (e[0].isIntersecting) {
       const nums = statsSection.querySelectorAll('.stat-number');
-      animateNumber(nums[0], 3, '+');
-      animateNumber(nums[1], 3, '');
+      animateNumber(nums[0], 8.57, '');
+      animateNumber(nums[1], 3, '+');
       so.disconnect();
     }
   }, { threshold: 0.5 });
