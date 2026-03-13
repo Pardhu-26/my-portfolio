@@ -205,10 +205,29 @@ ul { list-style: none; }
 .hp-icon      { background: rgba(52,211,153,0.12);  color: var(--clr-green); }
 .quantum-icon { background: rgba(129,140,248,0.12); color: var(--clr-accent-2); }
 .chart-line { background: rgba(129,140,248,0.12); color: var(--clr-accent-2); }
+.bar-graph { background: rgba(129,140,248,0.12); color: var(--clr-accent-2); }
 .cert-issuer { font-size: 0.78rem; font-family: var(--font-mono); color: var(--clr-primary); letter-spacing: 0.05em; text-transform: uppercase; }
 .cert-title { font-size: 1.05rem; font-weight: 700; color: var(--clr-text); margin: 4px 0 8px; }
+.cert-middle { font-size: 28px; font-weight: 600; color: var(--clr-text); margin: 4px 0 8px; justify-self:center  }
 .cert-desc { font-size: 0.88rem; color: var(--clr-text-muted); line-height: 1.7; flex: 1; }
 .cert-badge { display: inline-block; padding: 4px 12px; background: rgba(52,211,153,0.12); border: 1px solid rgba(52,211,153,0.3); border-radius: 50px; font-size: 0.75rem; font-weight: 600; color: var(--clr-green); align-self: flex-start; }
+.card{
+    width:350px;
+    height:420px;
+    background:#0f1b33;
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;   /* horizontal center */
+    align-items:center;       /* vertical center */
+    transform: translateY(-4px); border-color: var(--clr-border-hover); box-shadow: var(--shadow-glow);
+}
+
+.center-text{
+    color:#cfd8e3;
+    font-size:28px;
+    font-weight:600;
+}
 
 /* 14. RESUME */
 .resume-card { background: linear-gradient(135deg, var(--clr-surface), var(--clr-surface-2)); border: 1px solid var(--clr-border); border-radius: var(--radius-xl); padding: 56px; text-align: center; position: relative; overflow: hidden; }
